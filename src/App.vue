@@ -1,19 +1,29 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <h1>Quiz Time!!!</h1>
+    <img alt="Vue logo" src="./assets/logo.png" />
+    <div v-for="questionData in $options.myJson" :key="questionData.id">
+      <Question :questionData="questionData" />
+    </div>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Question from "./components/Question.vue";
+import MY_JSON from "@/questions.json";
+import Vue from "vue";
+import Buefy from "buefy";
+import "buefy/dist/buefy.css";
 
+Vue.use(Buefy);
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
-  }
-}
+    Question,
+  },
+  //custom option named myJson, ko nên đưa vào data
+  myJson: MY_JSON,
+};
 </script>
 
 <style>
@@ -23,6 +33,13 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  /* margin-top: 60px; */
+  padding: 10%;
+  padding-top: 0;
+  background-color: lightblue;
+}
+
+h1 {
+  font-size: 50px;
 }
 </style>
