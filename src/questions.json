@@ -1,0 +1,36 @@
+[
+  {
+    "id": 1,
+    "question": "Khi gặp Thúy Kiều , Kim Trọng trao cho vật gì làm tin?",
+    "answers": [
+      "Dải yếm",
+      "Miếng Lụa",
+      "Chiếc châm cài tóc",
+      "Chiếc khăn hồng"
+    ],
+    "rightAnswer": "Chiếc khăn hồng"
+  },
+  {
+    "id": 2,
+    "question": "Trong tác phẩm 'Nhớ rừng' của Thế Lữ khi say con hổ uống cái gì?",
+    "answers": ["Ánh trăng tan", "Nước suối", "Rượu"],
+    "rightAnswer": "Ánh trăng tan"
+  },
+  {
+    "id": 3,
+    "question": "Đại vương ếch trong tác phẩm 'Dế mèn phưu lưu ký' có tên là gì?",
+    "answers": ["Ếch ểnh ương", "Ếch cốm", "Ếch đồng"],
+    "rightAnswer": "Ếch cốm"
+  },
+  {
+    "id": 4,
+    "question": "Vũ điệu truyền thống của đảo Hawaii là?",
+    "answers": [
+      "Điệu nhảy Hula",
+      "Điệu nhảy cha cha cha",
+      "Vũ điệu SamBa",
+      "Vũ điệu Tango"
+    ],
+    "rightAnswer": "Điệu nhảy Hula"
+  }
+]
