@@ -20,9 +20,7 @@ describe("UTC Question Component", () => {
     });
     const rightAnswer = wrapper.findAll("input").at(3);
     await rightAnswer.trigger("click");
-    expect(wrapper.findAll("p").at(0).text()).toEqual(
-      "Đúng rồi, bạn giỏi quá :33"
-    );
+    expect(wrapper.find("span").text()).toEqual("Đúng rồi, bạn giỏi quá :33");
   });
 
   it("UT002: Test when wrong answer is chosen", async () => {
